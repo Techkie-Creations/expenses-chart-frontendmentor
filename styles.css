@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+
+/* GLOBAL */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	background-color: hsl(27, 66%, 92%);
+	font-size: 18px;
+	font-family: "DM Sans";
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700 !important;
+}
+
+/* MAIN */
+
+.main {
+	width: 50%;
+	margin: 5% auto;
+}
+
+/* TOP SECTION */
+
+.main .top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: hsl(10, 79%, 65%);
+	padding: 1rem 2rem;
+	margin-bottom: 2rem;
+}
+
+.main .top .text {
+	color: hsl(33, 100%, 98%);
+}
+
+.main .top .text h3 {
+	font-size: calc(100% * 2.5);
+	margin: 0;
+}
+
+.main .top .text p {
+	font-size: calc(100% * 1.3);
+	margin: 0.6rem 0;
+}
+
+/* BOTTOM SECTION */
+
+.main .bottom {
+	width: 100%;
+	padding: 1.5rem 2rem;
+	background-color: white;
+}
+
+/* SVG AREA */
+
+.main .bottom .contain {
+	width: 100%;
+	margin: auto;
+}
+
+.main .bottom .contain svg rect:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+/* LINE */
+
+.main .bottom .line {
+	border: 1px solid hsl(27, 66%, 92%);
+	margin-bottom: 2rem;
+}
+
+/* BOTTOM TEXT */
+
+.main .bottom p {
+	margin-bottom: 0.7rem;
+}
+
+.main .bottom .detail {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.main .bottom .detail h2 {
+	font-size: calc(100% * 2.5);
+	margin: 0;
+}
+
+.main .bottom .detail p {
+	margin: 0;
+}
+
+.main .bottom .detail p.bold {
+	font-weight: 800;
+	font-size: calc(100% * 1.3);
+}
+
+.main .bottom .detail .side {
+	text-align: right;
+	margin: 0;
+}
+
+/* GROUPINGS */
+
+.main .top,
+.main .bottom {
+	border-radius: 1.3rem;
+}
+
+.main .bottom h1,
+.main .bottom .detail h2,
+.main .bottom .detail p.bold {
+	color: hsl(25, 47%, 15%);
+}
+
+.main .bottom p,
+.main .bottom .detail p.other {
+	color: hsl(28, 10%, 53%);
+}
+
+/* FOOTER */
+
+footer {
+	text-align: center;
+	color: hsl(10, 79%, 65%);
+}
+
+footer .avatar {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	object-position: 0rem 0.01rem;
+	object-fit: cover;
+}
+
+footer .attribution a {
+	text-decoration: none;
+	color: hsl(186, 34%, 60%);
+}
+
+footer .attribution a:hover {
+	color: hsl(25, 47%, 15%);
+}
+
+footer p.copy {
+	font-weight: 700;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 700px) {
+	.main {
+		width: 90%;
+	}
+
+	.main .bottom .detail h2 {
+		font-size: calc();
+	}
+}
